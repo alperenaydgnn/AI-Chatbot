@@ -1,0 +1,34 @@
+services:
+  # Backend API
+  - type: web
+    name: chatbot-backend
+    env: node
+    plan: free
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DEEPSEEK_API_KEY
+        sync: false # Manuel olarak set edilmesi gerekiyor
+      - key: PORT
+        value: 10000
+
+  # Frontend Static Site
+  - type: web
+    name: chatbot-frontend
+    env: static
+    plan: free
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    routes:
+      - type: redirect
+        source: /api/*
+        destination: https://chatbot-backend.onrender.com/api/*
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
