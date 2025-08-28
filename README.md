@@ -49,7 +49,7 @@ cd backend
 cp ../env.example .env
 ```
 
-`.env` dosyasını düzenleyin ve DeepSeek API anahtarınızı ekleyin:
+`.env` dosyasını düzenleyin ve Groq API anahtarınızı ekleyin:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
