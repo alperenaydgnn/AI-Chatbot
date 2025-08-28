@@ -4,7 +4,7 @@ Modern ve kullanıcı dostu bir AI chatbot uygulaması. React frontend ve Node.j
 
 ## ✨ Özellikler
 
-- 💬 **Gerçek zamanlı sohbet**: DeepSeek Chat modeli ile güçlendirilmiş
+- 💬 **Gerçek zamanlı sohbet**: Grok Chat modeli ile güçlendirilmiş
 - 📱 **Responsive tasarım**: Mobil ve masaüstü uyumlu
 - 💾 **Sohbet geçmişi**: LocalStorage ile otomatik kaydetme
 - 🎨 **Modern UI**: TailwindCSS ile şık tasarım
@@ -19,7 +19,7 @@ Modern ve kullanıcı dostu bir AI chatbot uygulaması. React frontend ve Node.j
 
 - Node.js (v18+ önerilen)
 - npm veya yarn
-- DeepSeek API anahtarı (ücretsiz)
+- Groq API anahtarı (ücretsiz)
 
 ### 1. Projeyi İndirin
 
@@ -151,7 +151,7 @@ API sağlık kontrolü.
 1. Vercel hesabınıza giriş yapın
 2. Projeyi import edin
 3. Environment variables ekleyin:
-   - `DEEPSEEK_API_KEY`: DeepSeek API anahtarınız
+   - `Grok_API_KEY`: Grok API anahtarınız
 4. Deploy edin
 
 Frontend otomatik olarak build edilir ve statik dosyalar serve edilir.
@@ -167,7 +167,7 @@ Backend serverless function olarak çalışır.
    - Build Command: `cd frontend && npm install && npm run build`
    - Publish Directory: `frontend/dist`
 4. Environment variables:
-   - `DEEPSEEK_API_KEY`: DeepSeek API anahtarınızı ekleyin
+   - `Grok_API_KEY`: Grok API anahtarınızı ekleyin
 
 ## 🛠️ Geliştirme
 
@@ -192,7 +192,7 @@ Backend serverless function olarak çalışır.
 2. **Error Handling**: Hem client hem server tarafında kapsamlı hata yönetimi
 3. **LocalStorage**: Sohbet geçmişi otomatik olarak kaydedilir
 4. **Responsive**: Mobil-first tasarım yaklaşımı
-5. **Free API**: DeepSeek ücretsiz API limiti oldukça cömert (günlük kullanım için yeterli)
+5. **Free API**: Grok ücretsiz API limiti oldukça cömert (günlük kullanım için yeterli)
 
 ## 🐛 Sorun Giderme
 
@@ -200,9 +200,9 @@ Backend serverless function olarak çalışır.
 
 1. **API Key Hatası**
    ```
-   Error: DeepSeek API anahtarı yapılandırılmamış
+   Error: Grok API anahtarı yapılandırılmamış
    ```
-   Çözüm: `.env` dosyasında `DEEPSEEK_API_KEY` değişkenini kontrol edin.
+   Çözüm: `.env` dosyasında `Grok_API_KEY` değişkenini kontrol edin.
 
 2. **Port Çakışması**
    ```
