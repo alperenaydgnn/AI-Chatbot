@@ -52,12 +52,11 @@ cp ../env.example .env
 `.env` dosyasını düzenleyin ve DeepSeek API anahtarınızı ekleyin:
 
 ```env
-DEEPSEEK_API_KEY=your_deepseek_api_key_here
+GROQ_API_KEY=your_groq_api_key_here
 PORT=5000
 NODE_ENV=development
 ```
 
-> **DeepSeek API Anahtarı**: [platform.deepseek.com](https://platform.deepseek.com) adresinden ücretsiz olarak alabilirsiniz.
 
 ### 4. Uygulamayı Başlatın
 
